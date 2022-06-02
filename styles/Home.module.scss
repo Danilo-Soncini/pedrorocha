@@ -243,7 +243,7 @@
            small{
             font-size: 1.3rem;
             font-style: italic;
-            font-weight: 100;
+            font-weight: 300;
             width: 100%;
             text-align: start;
             text-transform: uppercase;
@@ -258,14 +258,15 @@
             width: 100%;
             .price{
               span{
+                color: var(--black);
                 display: block;
                 font-size: 4rem;
                 line-height: 3.5rem;
                 font-weight: 600;
-                color: transparent;
-                font-style: italic;
-                -webkit-text-stroke-width: 2px;
-                -webkit-text-stroke-color: var(--black);
+                background: white;
+                padding: 15px;
+                border-radius: 1rem;
+                margin: 5px 0px;
               }
               @media(min-width: 400px){
                 font-size: 5rem;
