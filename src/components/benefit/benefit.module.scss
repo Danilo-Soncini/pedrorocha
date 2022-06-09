@@ -1,0 +1,169 @@
+.benefit_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0px;
+
+    border-bottom: 2px solid var(--green);
+    .benefit_major_content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap;
+
+      @media(min-width: 1024px){
+        justify-content: space-evenly;
+      }
+
+      > h3{
+        color: var(--green);
+
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        text-transform: uppercase;
+
+        font-weight: 900;
+        @media(min-width: 1024px){
+          padding: 0px 10%;
+          margin-bottom: 5rem;
+          font-size: 3rem;
+          line-height: 3.5rem;
+        }
+      }
+
+      .benefit_cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        width: 100%;
+        padding: 30px;
+        
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+
+        background-color: var(--green);
+        box-shadow: 6px 6px 6px var(--shadow);
+
+        @media(min-width: 1024px){
+          width: 40%;
+          box-shadow: 10px 10px 10px var(--shadow);
+        }
+
+        ul{
+          list-style: none;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+          li{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0px;
+            width: 100%;
+            &:last-child{
+              margin-bottom: 0;
+            }
+            &:first-child{
+              margin-top: 0;
+            }
+            svg{
+              font-size: 2rem;
+              margin-right: 0.5rem;
+              width: 30px;
+              color: var(--black);
+              
+            }
+            span{
+              font-size: 1.1rem;
+              font-weight: 600;
+              width: 80%;
+              @media(min-width: 1024px){
+                font-size: 1.3rem;
+              }
+
+            }
+          }
+        }
+        .cards_prices{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 2rem;
+          width: 100%;
+           small{
+            font-size: 1.3rem;
+            font-style: italic;
+            font-weight: 300;
+            width: 100%;
+            text-align: start;
+            text-transform: uppercase;
+            &:last-child{
+              text-align: end;
+            }
+          }
+          .prices_container{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            .price{
+              span{
+                color: var(--black);
+                display: block;
+                font-size: 3.5rem;
+                line-height: 3rem;
+                font-weight: 600;
+                background: white;
+                padding: 10px;
+                border-radius: 1rem;
+                margin: 5px 0px;
+                @media(min-width: 400px){
+                  font-size: 4rem;
+                  line-height: 3.5rem;
+                  padding: 15px;
+                }
+              }
+              
+            }
+          }
+        }
+      }
+
+      > a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 1.4rem;
+        background-color: var(--green);
+        border-radius: 1.5rem;
+        margin-top: 2rem;
+        border: 1px solid var(--white);
+
+        text-align: center;
+        color: var(--white);
+        font-size: 1.5rem;
+        font-weight: 600;
+
+        animation: scalebig 3s infinite;
+
+        transition: ease-in 200ms;
+        &:hover{
+          background-color: var(--white);
+          border: 1px solid var(--green);
+          color: var(--green);
+        }
+      }
+    }
+  }
