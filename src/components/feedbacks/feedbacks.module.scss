@@ -23,6 +23,7 @@
     align-items: center;
     width: 100%;
     padding: 50px 0px;
+    position: relative;
     .feedbacks_major_content{
         .card{
             display: flex;
@@ -98,6 +99,20 @@
                 }
             }
         }
+        .cotainer_buttons{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+            padding-right: 1rem;
+            button{
+                color: var(--green);
+                font-size: 3rem;
+                background: white;
+                border: inherit;
+            }
+        }   
+        
     }
 }
 

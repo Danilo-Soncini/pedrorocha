@@ -1,13 +1,16 @@
 import { useState } from 'react';
-import Carousel from 'react-elastic-carousel';
-
 import styles from './feedbacks.module.scss'
+import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
 
-const breakPoints = [
-    { width: 1, itemsToShow: 1 },
-    { width: 550, itemsToShow: 2},
-    { width: 768, itemsToShow: 3 }
-];
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation, Pagination } from "swiper";
 
 interface feedbacksInterface {
     name: string,
@@ -16,9 +19,6 @@ interface feedbacksInterface {
     results: string
 }
 
-
-
-  
 export function Feedbacks() { 
     
     const [feedbacks, setFeedbacks] = useState<feedbacksInterface[]>([
@@ -96,34 +96,69 @@ export function Feedbacks() {
         },
     ]);
 
-    return (
+    
+
+    return (    
         <section className={styles.feedbacks_section}>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className={styles.feedbacks_major_content}>
-                            <Carousel breakPoints={breakPoints}>
+                            <Swiper
+                                navigation={{ nextEl: "#swiper-forward", prevEl: "#swiper-back" }}
+
+                                autoplay={{
+                                    delay: 1000,
+                                    disableOnInteraction: false,
+                                }}
+                                    
+                                modules={[Pagination, Navigation]}
+                                breakpoints={{
+                                    640: {
+                                    slidesPerView: 1,
+                                    },
+                                    768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 10,
+                                    },
+                                    1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 10,
+                                    },
+                                }}
+
+                                
+
+                                className="mySwiper"
+                            >
                                 {feedbacks.map(({ name, objective, photo, results }, i) => {
                                     return(
-                                        <div className={styles.card}  key={i}>
-                                            <div className={styles.card_front}>
-                                                <img src={photo} alt="" />
+                                        <SwiperSlide>
+                                            <div className={styles.card}  key={i}>
+                                                <div className={styles.card_front}>
+                                                    <img src={photo} alt="" />
+                                                </div>
+                                                <div className={styles.card_back}>
+                                                    <div>
+                                                        <h5>Nome</h5><span>{name}</span>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Objetivo</h5><span>{objective}</span>
+                                                    </div>
+                                                    <div>
+                                                        <h5>Resultados</h5><span>{results}</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div className={styles.card_back}>
-                                                <div>
-                                                    <h5>Nome</h5><span>{name}</span>
-                                                </div>
-                                                <div>
-                                                    <h5>Objetivo</h5><span>{objective}</span>
-                                                </div>
-                                                <div>
-                                                    <h5>Resultados</h5><span>{results}</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </SwiperSlide>
                                     )   
                                 })}
-                            </Carousel>
+                            </Swiper>
+
+                            <div className={styles.cotainer_buttons}>
+                                <button id='swiper-back' className={styles.back_swiper_button}><IoIosArrowDropleftCircle/></button>
+                                <button id='swiper-forward' className={styles.next_swiper_button}><IoIosArrowDroprightCircle/></button>
+                            </div>
                         </div>
                     </div>
                 </div>

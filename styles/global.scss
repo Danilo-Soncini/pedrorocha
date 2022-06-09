@@ -68,6 +68,9 @@ a{
   text-decoration: none;
 }
 
+
+// ESTILOS PADRÃO QUE EU GOSTO DE UTILIZAR DO BOOTSTRAP
+
 .container{
   width: 100%;
   padding-right: 15px;
@@ -107,25 +110,12 @@ a{
   padding-left: 15px;
 }
 
-.rec.rec-arrow {
-  display: none;
-  @media(min-width: 1024px){
-    display: block;
-    border: 1px solid var(--green);
-    color: var(--green);
-    background-color: var(--white);
-    &:hover:enabled{
-      border: inherit;
-      background-color: var(--green);
-      color: var(--white);
-    }
-    &:focus:enabled{
-      border: inherit;
-      background-color: var(--green);
-      color: var(--white);
-    }
-  }
+
+// ESTILIZAÇÃO DO CARROUSEL
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.rec.rec-dot_active{
-  background-color: var(--green);
-}
+
