@@ -106,7 +106,7 @@ a{
   opacity: 0.5;
   cursor: no-drop;
   &:hover{
-    background: inherit;
-    filter: inherit !important;
+    color: var(--green) !important;
+    background: var(--white) !important;
   }
 }
