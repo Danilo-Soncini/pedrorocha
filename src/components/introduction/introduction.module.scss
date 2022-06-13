@@ -1,3 +1,27 @@
+@keyframes scalebig { 
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes animationToUpToBottom {
+  25%{
+    margin-bottom: -5px;
+  }
+  50%, 100%{
+    margin-bottom: 0px;
+  }
+  75%{
+    margin-bottom: 5px;
+  }
+}
+
 .introduction_section{
     display: flex;
     justify-content: center;
@@ -12,10 +36,9 @@
 
     position: relative;
     padding: 50px 0px;
-    @media(min-width: 1440px){
+    @media(min-width: 1024px){
       background-size: contain;
-      background-position: left;
-      background-image: url('../../../public/images/fotoPedroRocha.png');
+      background-position: center bottom;
     }
     &::before{
       content: '';
@@ -24,7 +47,7 @@
       width: 100%;
       top: 0;
       left: 0;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("../../../public/images/fundo-preto.jpg");
+      background-image: url("../../../public/images/fundo-preto.jpg");
       z-index: -1;
       background-size: cover;
     }
@@ -36,10 +59,6 @@
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
-      @media(min-width: 1024px){
-        display: flex;
-        justify-content: flex-end;
-      }
     }
     > svg{
       font-size: 2.5rem;
@@ -54,7 +73,7 @@
       content: '';
       width: 100%;
       height: 80px;
-      background-color: var(--white);
+      background-color: var(--light-gray);
       clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 60%);
       position: absolute;
       bottom: 0;
