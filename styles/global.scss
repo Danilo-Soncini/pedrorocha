@@ -1,3 +1,12 @@
+@keyframes Fadein {
+  to{
+    opacity: 0;
+  }
+  from{
+    opacity: 1;
+  }
+}
+
 :root{
   --white: #ffffff;
   --green: #00e65d;
@@ -108,5 +117,59 @@ a{
   &:hover{
     color: var(--green) !important;
     background: var(--white) !important;
+  }
+}
+
+// ESTILIZAÇÃO DO MODAL
+
+.react-modal-overlay{
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.react-modal-content{
+  width: 90%;
+  max-width: 600px;
+  background: var(--white);
+  position: relative;
+  border-radius: 0.25rem;
+  z-index: 21;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media(min-width: 768px){
+    padding: 0 4rem;
+  }
+}
+
+.react-modal-close{
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--green);
+  border-radius: 100%;
+  color: white;
+  border: 0;
+
+  transition: filter 0.2s;
+
+  span{
+    font-size: 1.2rem;
+  }
+  &:hover{
+      filter: brightness(0.8);
   }
 }

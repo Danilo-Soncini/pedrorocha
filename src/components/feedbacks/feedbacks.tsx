@@ -104,6 +104,8 @@ export function Feedbacks() {
                 <div className="row">
                     <div className="col-12">
                         <div className={styles.feedbacks_major_content}>
+                            <h3>Feedbacks</h3>
+
                             <Swiper
                                 navigation={{ nextEl: "#swiper-forward", prevEl: "#swiper-back" }}
 

@@ -1,0 +1,32 @@
+.modal_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 75px 0px;
+
+    .modal_major_content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      > h6{
+        color: var(--green);
+
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+        margin-bottom: 2rem;
+        width: 100%;
+
+        font-weight: 700;
+          @media(min-width: 1024px){
+          margin-bottom: 5rem;
+          font-size: 1.4rem;
+          line-height: 1.9rem;
+        }
+      }
+    }
+  }

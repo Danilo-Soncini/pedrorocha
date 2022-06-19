@@ -37,7 +37,7 @@ export function Benefit() {
     ])
 
     return(
-        <section className={styles.benefit_section}>
+        <section className={styles.benefit_section} id="benefit">
             <div className="container">
                 <div className="row">
                     <div className="col-12">
