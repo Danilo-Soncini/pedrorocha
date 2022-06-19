@@ -39,7 +39,7 @@ export function Form() {
             'Authorization': process.env.NEXT_PUBLIC_API_KEY, 
             'Content-Type': 'application/json'
         },
-        data : data
+            data : data
         };
 
         await axios(config)
