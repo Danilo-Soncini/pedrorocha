@@ -48,16 +48,10 @@ export function Form() {
             toast.success("Seu formulário foi enviado!");
             setEmail('');
             setWhatsapp('');
-            console.log(process.env.NEXT_PUBLIC_LIST_ID)
-            console.log(process.env.NEXT_PUBLIC_API_URL)
-            console.log(process.env.NEXT_PUBLIC_API_KEY)
         })
 
         .catch(function (error: any) {
             toast.error("Erro ao enviar o formulário, tente novamente mais tarde");
-            console.log(process.env.NEXT_PUBLIC_LIST_ID)
-            console.log(process.env.NEXT_PUBLIC_API_URL)
-            console.log(process.env.NEXT_PUBLIC_API_KEY)
         });
 
 
