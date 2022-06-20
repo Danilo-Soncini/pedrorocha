@@ -135,7 +135,7 @@ export function Feedbacks() {
                             >
                                 {feedbacks.map(({ name, objective, photo, results }, i) => {
                                     return(
-                                        <SwiperSlide>
+                                        <SwiperSlide key={i}>
                                             <div className={styles.card}  key={i}>
                                                 <div className={styles.card_front}>
                                                     <img src={photo} alt="" />

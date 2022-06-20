@@ -1,7 +1,12 @@
 import { useState } from 'react'
 
 import Head from 'next/head'
+import { ToastContainer } from 'react-toastify'
+
+
 import styles from '../../styles/Home.module.scss'
+import 'react-toastify/dist/ReactToastify.css';
+import Modal from "react-modal";
 
 import { Benefit } from '../components/benefit/benefit'
 import { Faq } from '../components/faq/faq'
@@ -11,11 +16,12 @@ import { Header } from '../components/header/header'
 import { Introduction } from '../components/introduction/introduction'
 import { Whatsapp } from '../components/whatsapp/whatsapp'
 import { FormModal } from '../components/modal/modal'
-import 'react-toastify/dist/ReactToastify.css';
-import { ToastContainer } from 'react-toastify'
+
+Modal.setAppElement('#root');
 
 function Home() {
   const [cursorLocal, setCursorLocal] = useState(250)
+  
 
   return (
     <>
@@ -30,6 +36,7 @@ function Home() {
             setCursorLocal(y)
           }
         )} 
+        id="root"
       >
         <Header />
 

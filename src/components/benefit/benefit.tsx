@@ -47,9 +47,9 @@ export function Benefit() {
                             <div className={styles.benefit_cards}>
                                 <ul>
                                     {benefits.map(({ benefit }, i) => (
-                                        <li>
-                                        <TiInputChecked/>
-                                        <span>{benefit}</span>
+                                        <li key={i}>
+                                            <TiInputChecked/>
+                                            <span>{benefit}</span>
                                         </li>
                                     ))}
                                 </ul>

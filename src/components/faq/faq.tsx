@@ -84,16 +84,14 @@ export function Faq() {
                         <div className={styles.faq_major_content}>
                             <h3>Perguntas Frequentes</h3>
                             {faqs.map(({ question, answer, open }, i) => (
-                                <>
-                                    <div 
-                                    className={`${styles.single_faq} ${open ? styles.open : styles.closed}` }
+                                <div 
                                     key={i}
+                                    className={`${styles.single_faq} ${open ? styles.open : styles.closed}` }
                                     onClick={() => {toggleFAQ(i)}}
-                                    >
-                                        <h6>{question} <BsArrowDownShort /></h6>
-                                        <p>{answer}</p>
-                                    </div>
-                                </>
+                                >
+                                    <h6>{question} <BsArrowDownShort /></h6>
+                                    <p>{answer}</p>
+                                </div>
                             ))}
                         </div>
                     </div>
