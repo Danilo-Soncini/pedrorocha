@@ -20,7 +20,7 @@
 *.pem
 
 # local env files
-*.env
+.env
 
 # debug
 npm-debug.log*
