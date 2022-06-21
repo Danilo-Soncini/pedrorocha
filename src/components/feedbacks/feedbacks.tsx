@@ -23,75 +23,21 @@ export function Feedbacks() {
     
     const [feedbacks, setFeedbacks] = useState<feedbacksInterface[]>([
         {
-            name: 'João',
-            objective: 'Emagrecimento',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
+            name: 'Clauber Codonho',
+            objective: 'Emagrecimento e ganho de massa muscular',
+            photo: '/images/ClauberCodonho.jpeg',
             results: 'Enmagreceu 10kg com o processo de perda de peso'
         },
         {
-            name: 'Vitor',
+            name: 'Jonathan Ferreira',
             objective: 'Ganho de massa',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
+            photo: '/images/JonathanFerreira.jpeg',
             results: 'Ganhou 10kg de massa limpa no processo'
         },
         {
-            name: 'Lucca',
-            objective: 'Definição',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Fernando ganhou uma definição de massa sobrenatural em 2 dias treinando'
-        },
-        {
-            name: 'João',
-            objective: 'Emagrecimento',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Enmagreceu 10kg com o processo de perda de peso'
-        },
-        {
-            name: 'Vitor',
-            objective: 'Ganho de massa',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Ganhou 10kg de massa limpa no processo'
-        },
-        {
-            name: 'Lucca',
-            objective: 'Definição',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Fernando ganhou uma definição de massa sobrenatural em 2 dias treinando'
-        },
-        {
-            name: 'João',
-            objective: 'Emagrecimento',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Enmagreceu 10kg com o processo de perda de peso'
-        },
-        {
-            name: 'Vitor',
-            objective: 'Ganho de massa',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Ganhou 10kg de massa limpa no processo'
-        },
-        {
-            name: 'Lucca',
-            objective: 'Definição',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Fernando ganhou uma definição de massa sobrenatural em 2 dias treinando'
-        },
-        {
-            name: 'João',
-            objective: 'Emagrecimento',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Enmagreceu 10kg com o processo de perda de peso'
-        },
-        {
-            name: 'Vitor',
-            objective: 'Ganho de massa',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
-            results: 'Ganhou 10kg de massa limpa no processo'
-        },
-        {
-            name: 'Lucca',
-            objective: 'Definição',
-            photo: 'https://elitedamusculacao.com/wp-content/uploads/elementor/thumbs/23-peixm552fnkfgf0zyrh508iy11uo52zq3tyhkej36k.jpg',
+            name: 'Ramon',
+            objective: 'Prática da calistenia e ganho de massa',
+            photo: '/images/Antonio.jpeg',
             results: 'Fernando ganhou uma definição de massa sobrenatural em 2 dias treinando'
         },
     ]);
@@ -147,9 +93,9 @@ export function Feedbacks() {
                                                     <div>
                                                         <h5>Objetivo</h5><span>{objective}</span>
                                                     </div>
-                                                    <div>
+                                                    {/* <div>
                                                         <h5>Resultados</h5><span>{results}</span>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </SwiperSlide>

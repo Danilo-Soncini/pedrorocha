@@ -30,13 +30,13 @@ function Home() {
       </Head>
 
       <main 
+        id="root"
         className={styles.main}
         onMouseMove={((e) => { 
             var y = e.clientY
             setCursorLocal(y)
           }
         )} 
-        id="root"
       >
         <Header />
 
@@ -50,8 +50,6 @@ function Home() {
         
         <Faq />
 
-        <FormModal cursorLocal={cursorLocal}/>
-
         <Whatsapp />
 
         <ToastContainer 
@@ -60,6 +58,9 @@ function Home() {
         />
 
       </main>
+
+      <FormModal cursorLocal={cursorLocal}/>
+
     </>
   )
 }

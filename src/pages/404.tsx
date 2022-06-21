@@ -6,28 +6,28 @@ import { Header } from '../components/header/header'
 export default function FourOhFour() {
   return (
     <>
-    <Head>
-        <title>Error 404 | PedroRocha</title>
-    </Head>
+        <Head>
+            <title>Error 404 | PedroRocha</title>
+        </Head>
 
-    <Header/>
+        <Header/>
     
-    <section className={styles.error404_section}>
-        <div className="container">
-            <div className="row">
-                <div className={styles.col_12}>
-                    <div className={styles.error404_major_content}>
-                        <h1>Página não encontrada</h1>
-                        <Link href="/">
-                            <a>
-                                Voltar para tela inicial
-                            </a>
-                        </Link>
+        <section className={styles.error404_section}>
+            <div className="container">
+                <div className="row">
+                    <div className={styles.col_12}>
+                        <div className={styles.error404_major_content}>
+                            <h1>Página não encontrada</h1>
+                            <Link href="/">
+                                <a>
+                                    Voltar para tela inicial
+                                </a>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
   </>
   )
 }
