@@ -1,7 +1,11 @@
 import Document, {Html, Head, Main, NextScript} from 'next/document'
+import Modal from "react-modal";
 
 export default class MyDocument extends Document{
     render() {
+
+        Modal.setAppElement('#root');
+
         return(
             <Html>
                 <Head>
@@ -13,12 +17,13 @@ export default class MyDocument extends Document{
                     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                 />
                 
-                <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+                <link rel="shortcut icon" href="images/favicon.png" />
                 </Head>
 
                 <body>
                     <Main/>
                     <NextScript />
+                    <div id="root"></div>
                 </body>
 
 

@@ -1,0 +1,148 @@
+.pricing_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0px;
+    position: relative;
+    .pricing_major_content{
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-flow: wrap;
+        @media(min-width: 1024px){
+            justify-content: space-evenly;
+        } 
+        >h3{
+            color: var(--green);
+
+            text-align: center;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            margin-bottom: 2rem;
+            width: 100%;
+            text-transform: uppercase;
+
+            font-weight: 700;
+            @media(min-width: 1024px){
+                padding: 0px 10%;
+                margin-bottom: 5rem;
+                font-size: 3rem;
+                line-height: 3.5rem;
+            }
+        } 
+        
+        .pricing_card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding: 3rem 2rem;
+            background-color: var(--white);
+            &:last-child{
+                background-color: var(--green);
+                .pricing_card_top{
+                    h5{
+                        color: var(--white);
+                        border-bottom: 1px solid var(--white);
+                    }
+                    p{
+                        b{
+                            color: var(--white)
+                        }
+                    }
+                }
+                .pricing_card_middle{
+                    color: var(--white);
+
+                }
+                a{
+                    background-color: var(--white);
+                    color: var(--green);
+                    &:hover{
+                        color: var(--white);
+                        border: 1px solid var(--white);
+                    }
+                }
+            }
+            @media(min-width: 414px){
+                width: 80%;                                                                                                                            
+            }
+            @media(min-width: 1024px){
+                width: 50%;    
+                margin: 0;  
+                min-height: 40rem;
+                justify-content: space-between;
+            }
+            .pricing_card_top{
+                margin-bottom: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h5{
+                    text-align: center;
+                    color: var(--green);
+                    font-size: 1.8rem;
+                    border-bottom: 2px solid var(--green);
+                    margin-bottom: 1.5rem;
+                    width: 100%;
+                    @media(min-width: 1024px){
+                        font-size: 2.3rem;                                                                                                                
+                    }
+                }
+                p{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    font-style: italic;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    b{  
+                        display: block;
+                        font-weight: 900;
+                        margin-right: 1rem;
+                        margin-left: 1rem;
+                        color: var(--green);
+                        font-size: 2.5rem;
+                        line-height: 2rem;
+                        span{
+                            position: relative;
+                            bottom: 0.1rem;
+                        }
+                    }
+                }
+            }
+            .pricing_card_middle{
+                margin-bottom: 3rem;
+                color: var(--dark-gray);
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+                text-align: center;
+                @media(min-width: 1024px){
+                    padding: 0rem 2rem;
+                }
+            }
+            a{
+                padding: 1.5rem 1rem;
+                background-color: var(--green);
+                color: var(--white);
+                font-weight: 600;
+                border-radius: 5rem;
+                font-size: 1.3rem;
+                text-align: center;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid var(--green);
+                    color: var(--green);
+                    transition: 300ms linear;
+                }
+                @media(min-width: 414px){
+                    font-size: 1.5rem;   
+                }
+            }
+        }
+    }
+}
