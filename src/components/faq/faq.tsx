@@ -11,53 +11,23 @@ interface FaqInterface {
 export function Faq() {
     const [faqs, setFaqs] = useState<FaqInterface[]>([
         {
-            question: 'Quero me inscrever no Perfil Privado do Norton, como faço?',
-            answer: 'Acesse www.eutreinocomonorton.com.br, e preencha o formulário com seu nome de usuário de Instagram, seu e-mail e seu Whatsapp e clique no botão QUERO TREINAR COM O NORTON.',
+            question: 'Consigo treinar com Gravação?',
+            answer: 'Pode ser acompanhado o treino gravado, repetir os pontos específicos, aumentar ou diminuir a velocidade e no final do treino tem as perguntas e respostas.',
             open: false
         },
         {
-            question: 'Quais os planos existentes no Perfil Privado do Norton?',
-            answer: 'O Perfil Privado do Norton oferece os planos:',
+            question: 'Como acessar o treino?',
+            answer: 'Acesso por qualquer dispositivo com internet o perfil privado do Insta e o portal de acesso aos alunos.',
             open: false
         },
         {
-            question: 'Qual a diferença entre os treinos das lives diárias para os treinos do Perfil Privado',
-            answer: 'No Perfil Privado, o Norton passa conteúdos exclusivos, treinos específicos (ex: treino só de peitoral,',
+            question: 'Como receber notificações dos Treinos?',
+            answer: 'Acessar os ... do canto superior direito e ativar todas as notificações do perfil.',
             open: false
         },
         {
-            question: 'Quero cancelar o meu acesso ao Perfil Privado do Norton. Como faço?',
-            answer: 'Para cancelar, você deve acessar o endereço https://lastlink.com/p/TI2S2OA. Clique nos três pontinhos',
-            open: false
-        },
-        {
-            question: 'Minhas dúvidas não foram respondidas nessas FAQ, para onde devo encaminhá-las?',
-            answer: 'Caso suas dúvidas não tenham sido respondidas nas questões acima, encaminhe um e-mail',
-            open: false
-        },
-        {
-            question: 'Quais as formas de pagamento do Perfil Privado do Norton?',
-            answer: 'Você pode assinar o Perfil Privado do Norton apenas com via cartão de crédito. Não é mais permitido',
-            open: false
-        },
-        {
-            question: 'Estou inscrito. Como faço para ter acesso ao Perfil Privado do Norton?',
-            answer: 'A plataforma Lastlink, utilizada para inscrição no Perfil Privado Eu Treino com o Norton, aguarda a',
-            open: false
-        },
-        {
-            question: 'No Perfil Privado do Norton, eu terei treinos personalizados?',
-            answer: 'Caso suas dúvidas não tenham sido respondidas nas questões acima, encaminhe um e-mail',
-            open: false
-        },
-        {
-            question: 'Minhas dúvidas não foram respondidas nessas FAQ, para onde devo encaminhá-las?',
-            answer: 'Não. No Perfil Privado, você conta com conteúdos exclusivos e específicos, além de suporte pelo direct e',
-            open: false
-        },
-        {
-            question: 'O cancelamento me dá direito ao reembolso do que paguei?',
-            answer: 'O Perfil Privado do Norton segue o previsto pelo artigo 49 do Código de Defesa do Consumidor (CDC), que',
+            question: 'Como funciona o Reembolso?',
+            answer: 'Reembolso somente na primeira vez que é contratado o Treinamento.',
             open: false
         },
     ]);
