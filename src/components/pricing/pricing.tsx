@@ -16,7 +16,7 @@ export function Pricing() {
                     em até <b>1x</b> de R$<span> 100,00</span>
                   </p>
                 </div>
-                <a href="https://lastlink.com/p/C2490E56A/checkout-payment" target="_blank">
+                <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
                   Quero adquirir este plano!
                 </a>
               </div>
@@ -31,7 +31,7 @@ export function Pricing() {
                     R$ <span>480,00</span> à vista
                   </p>
                 </div>
-                <a href="https://lastlink.com/p/C2490E56A/checkout-payment" target="_blank">
+                <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
                   Quero adquirir este plano!
                 </a>
               </div>
@@ -46,7 +46,7 @@ export function Pricing() {
                     R$ <span>720,00</span> à vista
                   </p>
                 </div>
-                <a href="https://lastlink.com/p/C2490E56A/checkout-payment" target="_blank">
+                <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
                   Quero adquirir este plano!
                 </a>
               </div>
