@@ -1,0 +1,28 @@
+.footer_main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    > img {
+      padding: 20px 0px;
+      width: 150px;
+    }
+    > span {
+      width: 100%;
+      background-color: rgb(110, 110, 110);
+      color: white;
+      text-align: center;
+      padding: 10px 0px;
+      a {
+        color: white;
+      }
+    }
+  }
+}

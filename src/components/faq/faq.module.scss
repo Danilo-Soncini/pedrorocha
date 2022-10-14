@@ -1,101 +1,102 @@
-.faq_section{
+.faq_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0px;
+
+  .faq_major_content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
     width: 100%;
-    padding: 50px 0px;
-
-    .faq_major_content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: wrap;
-        width: 100%;
-        @media(min-width: 1024px){
-            align-items: flex-start;
-        }
-        >h3{
-            color: var(--green);
-            text-align: center;
-            font-size: 2rem;
-            line-height: 2.5rem;
-            margin-bottom: 2rem;
-            width: 100%;
-            text-transform: uppercase;
-            font-weight: 700;
-            @media(min-width: 1024px){
-                padding: 0px 10%;
-                margin-bottom: 5rem;
-                font-size: 3rem;
-                line-height: 3.5rem;
-            }
-        }
-        .single_faq{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            width: 100%;
-            background-color: var(--gray);
-            margin-bottom: 20px;
-            padding: 30px 20px;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            @media(min-width: 1024px){
-                width: 46%;
-                margin: 20px 1%;
-            }
-            &.open{
-                h6{
-                    svg{
-                        transition: 300ms linear;
-                        transform: rotate(360deg);
-                    }
-                }
-                p{  
-                    margin-top: 2.5rem;
-                    height: 100%;
-                    opacity: 1;
-                    transition: 300ms linear;
-
-                }
-            }
-            &.closed{
-                h6{
-                    svg{
-                        transition: 300ms linear;
-                        transform: rotate(270deg);
-                    }
-                }
-                p{
-                    height: 0;
-                    opacity: 0;
-                    transition: 300ms linear;
-                }
-            }
-            h6{
-                display: inline-flex;
-                justify-content: flex-start;
-                align-items: center;
-                width: 100%;
-                font-size: 1.3rem;
-                line-height: 1.5rem;
-                position: relative;
-                color: var(--green);
-                padding-right: 3rem;
-                svg{
-                    position: absolute;
-                    right: 0;
-                    font-size: 2.5rem;
-                    z-index: -1;
-                }
-            }
-            p{  
-                font-size: 1.2rem;
-                line-height: 1.5rem;
-                width: 100%;
-                text-align: start;
-            }
-        }
+    @media (min-width: 1024px) {
+      align-items: flex-start;
     }
+    > h3 {
+      color: var(--green);
+      text-align: center;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+      @media (min-width: 1024px) {
+        padding: 0px 10%;
+        margin-bottom: 5rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+    }
+    .single_faq {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--gray);
+      margin-bottom: 20px;
+      padding: 30px 20px;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      @media (min-width: 1024px) {
+        width: 46%;
+        margin: 20px 1%;
+      }
+      &.open {
+        h6 {
+          svg {
+            transition: 300ms linear;
+            transform: rotate(360deg);
+          }
+        }
+        p {
+          margin-top: 2.5rem;
+          height: 100%;
+          opacity: 1;
+          transition: 300ms linear;
+        }
+      }
+      &.closed {
+        h6 {
+          svg {
+            transition: 300ms linear;
+            transform: rotate(270deg);
+          }
+        }
+        p {
+          height: 0;
+          opacity: 0;
+          transition: 300ms linear;
+        }
+      }
+      h6 {
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        position: relative;
+        color: var(--green);
+        padding-right: 3rem;
+        font-weight: 600;
+        svg {
+          position: absolute;
+          right: 0;
+          font-size: 2.5rem;
+          z-index: -1;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        font-weight: 300;
+        width: 100%;
+        text-align: start;
+      }
+    }
+  }
 }

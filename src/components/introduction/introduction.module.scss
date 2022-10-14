@@ -1,135 +1,136 @@
-@keyframes scalebig { 
-  0%{
+@keyframes scalebig {
+  0% {
     transform: scale(1);
   }
-  50%{
+  50% {
     transform: scale(1.1);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
 
 @keyframes animationToUpToBottom {
-  25%{
+  25% {
     margin-bottom: -5px;
   }
-  50%, 100%{
+  50%,
+  100% {
     margin-bottom: 0px;
   }
-  75%{
+  75% {
     margin-bottom: 5px;
   }
 }
 
-.introduction_section{
+.introduction_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../../../public/images/fotoPedroRocha.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  padding: 50px 0px;
+  @media (min-width: 1024px) {
+    background-size: contain;
+    background-position: center bottom;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../../../public/images/fundo-preto.jpg");
+    z-index: -1;
+    background-size: cover;
+  }
+  .col_12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  > a {
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 50px;
+    transform: rotate(315deg);
+    color: var(--green);
+    animation: animationToUpToBottom 2s linear infinite;
+  }
+  &::after {
+    content: "";
+    width: 100%;
+    height: 80px;
+    background-color: var(--light-gray);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 60%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @media (min-width: 1024px) {
+      height: 150px;
+      clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 80%);
+    }
+  }
+
+  .introduction_major_content {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      color: var(--white);
 
-    width: 100%;
-    min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../../../public/images/fotoPedroRocha.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative;
-    padding: 50px 0px;
-    @media(min-width: 1024px){
-      background-size: contain;
-      background-position: center bottom;
-    }
-    &::before{
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background-image: url("../../../public/images/fundo-preto.jpg");
-      z-index: -1;
-      background-size: cover;
-    }
-    .col_12{
-      -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-      max-width: 100%;
-      position: relative;
-      width: 100%;
-      padding-right: 15px;
-      padding-left: 15px;
-    }
-     > a{
-      font-size: 2.5rem;
-      position: absolute;
-      bottom: 50px;
-      transform: rotate(315deg);
-      color: var(--green);
-      animation: animationToUpToBottom 2s linear infinite;
-
-    }
-    &::after{
-      content: '';
-      width: 100%;
-      height: 80px;
-      background-color: var(--light-gray);
-      clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 60%);
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      @media(min-width: 1024px){
-        height: 150px;
-        clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 50% 80%);
+      font-size: 2rem;
+      line-height: 2.5rem;
+      font-weight: 900;
+      letter-spacing: 1px;
+      margin-bottom: 2rem;
+      @media (min-width: 1024px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+      span {
+        background-color: var(--green);
+        padding: 2px 10px;
+        font-style: italic;
+        clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
       }
     }
-    
-    .introduction_major_content{
-      display: flex;
+    a {
+      display: inline-flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      h1{
-        text-align: center;
-        color: var(--white);
-        
-        font-size: 2rem;
-        line-height: 2.5rem;
-        font-weight: 900;
-        letter-spacing: 1px;
-        margin-bottom: 2rem;
-        @media(min-width: 1024px){
-          font-size: 4rem;
-          line-height: 5rem;
-        }
-        span{
-          background-color: var(--green);
-          padding: 2px 10px;
-          font-style: italic;
-          clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
-        }
-      }
-      a{
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
 
-        padding: 1.4rem;
-        background-color: var(--green);
-        border-radius: 1.5rem;
+      padding: 1.4rem;
+      background-color: var(--green);
+      border-radius: 1.5rem;
 
-        text-align: center;
-        color: var(--white);
-        font-size: 1.5rem;
-        font-weight: 600;
+      text-align: center;
+      color: var(--white);
+      font-size: 1.5rem;
+      font-weight: 600;
 
-        animation: scalebig 3s infinite;
+      animation: scalebig 3s infinite;
 
-        transition: ease-in 200ms;
-        &:hover{
-          background-color: var(--white);
-          color: var(--green);
-        }
+      transition: ease-in 200ms;
+      &:hover {
+        background-color: var(--white);
+        color: var(--green);
       }
     }
   }
+}

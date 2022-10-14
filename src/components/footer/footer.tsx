@@ -1,8 +1,14 @@
+import Link from "next/link"
+import styles from "./footer.module.scss"
+
 export function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer_main}>
       <div>
-        <img src="/images/Logo.png" alt="" />
+        <Link href="/">
+          <img src="/images/Logo.png" alt="" />
+        </Link>
+
         <span>
           Feito com ♥ por <a href="https://luccadiassoncini.vercel.app/">Lucca dias Soncini</a>
         </span>
