@@ -1,24 +1,37 @@
-.whatsapplink{
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 2;
-    @media(min-width: 1024px){
-      bottom: 30px;
-      right: 30px;
+.redessociais {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @media (min-width: 1024px) {
+    bottom: 30px;
+    right: 30px;
+  }
+  a {
+    padding: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5rem;
+    transition: 200ms linear;
+    &:hover {
+      transform: scale(1.1);
     }
-    a{
-      padding: 10px;
+    svg {
+      font-size: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    &.whatsapp {
       background: var(--whatsapp);
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 5rem;
-      svg{
-        color: var(--white);
-        font-size: 2rem;
-        position: relative;
-        z-index: 2;
-      }
+      color: var(--white);
+    }
+    &.instagram {
+      background: var(--whatsapp);
+      color: var(--white);
     }
   }
+}
