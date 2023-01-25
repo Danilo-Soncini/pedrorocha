@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import Script from 'next/script'
 import Head from "next/head"
 import { ToastContainer } from "react-toastify"
 
@@ -26,7 +26,6 @@ function Home() {
       <Head>
         <title>Home | PedroRocha</title>
       </Head>
-
       <main
         className={styles.main}
         onMouseMove={(e) => {
