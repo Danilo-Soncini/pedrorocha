@@ -25,6 +25,7 @@ function Home() {
     <>
       <Head>
         <title>Home | PedroRocha</title>
+        <meta name="facebook-domain-verification" content="83n96qyfhjyawq7wgc6i6c9updob82" />
       </Head>
       <main
         className={styles.main}
