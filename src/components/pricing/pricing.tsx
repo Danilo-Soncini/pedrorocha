@@ -13,7 +13,7 @@ export function Pricing() {
                 <div className={styles.pricing_card_top}>
                   <h5>Mensal</h5>
                   <p>
-                    em até <b>1x</b> de R$<span> 110,00</span>
+                    em até <b>1x</b> de R$<span> 69,90</span>
                   </p>
                 </div>
                 <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
@@ -24,11 +24,11 @@ export function Pricing() {
                 <div className={styles.pricing_card_top}>
                   <h5>Semestral</h5>
                   <p>
-                    em até <b>6x</b> de R$<span> 80,00</span>
+                    em até <b>6x</b> de R$<span> 60,22</span>
                   </p>
                   <p>Ou</p>
                   <p>
-                    R$ <span>480,00</span> à vista
+                    R$ <span>329,40</span> à vista
                   </p>
                 </div>
                 <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
@@ -39,11 +39,11 @@ export function Pricing() {
                 <div className={styles.pricing_card_top}>
                   <h5>Anual</h5>
                   <p>
-                    em até <b>12x</b> de R$<span> 60,00</span>
+                    em até <b>12x</b> de R$<span> 46,68</span>
                   </p>
                   <p>Ou</p>
                   <p>
-                    R$ <span>720,00</span> à vista
+                    R$ <span>478,80</span> à vista
                   </p>
                 </div>
                 <a href="https://lastlink.com/p/CE081E7DE/checkout-payment" target="_blank">
